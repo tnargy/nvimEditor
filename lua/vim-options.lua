@@ -1,3 +1,5 @@
+-- General
+vim.opt.termguicolors = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -13,10 +15,12 @@ vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
+-- Search
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.wo.number = true
 
+-- Noice
 vim.keymap.set('n', '<leader>nd', ':NoiceDismis<CR>', {desc = 'Dismiss Noice Message'})
 
 -- Buffers
